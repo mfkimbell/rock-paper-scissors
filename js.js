@@ -1,7 +1,7 @@
 var playerScore = 0
 var computerScore = 0
 const buttons = document.querySelectorAll('input')
-
+//reads through document and makes a "list" of input objects
 function computerPlay() {
     let choices = ['rock', 'paper', 'scissors']
     return choices[Math.floor(Math.random() * choices.length)]
@@ -55,8 +55,35 @@ function playRound(playerSelection) {
 //     })
 // }
 
-buttons.forEach(button =>{                       
-    button.addEventListener('click', function(){
-        playRound(button.value)
-    })
+// buttons.forEach(button =>{                       
+//     button.addEventListener('click', function(){
+//         playRound(button.value)
+//     })
+// })
+
+// buttons.forEach(function(button) {                       
+//     button.addEventListener('click', function(){
+//         playRound(button.value)
+//     })
+// })
+
+var button = document.getElementById("rock");
+
+var button2 = document.getElementById("paper");
+
+var button3 = document.getElementById("scissors");
+
+button.addEventListener('click', function(){
+    playRound(button.value)
 })
+
+button2.addEventListener('click', function(){
+    playRound(button2.value)
+})
+
+button3.addEventListener('click', function(){
+    playRound(button3.value)
+})
+
+
+
