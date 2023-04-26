@@ -1,4 +1,4 @@
-rock-paper-scissors
+# rock-paper-scissors
 
 The purpose of this project was to practice raw Javascript.
 
